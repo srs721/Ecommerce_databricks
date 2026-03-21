@@ -24,7 +24,7 @@ The Bronze notebooks ingest raw CSV files from the Databricks Volume and write t
 - System metadata columns like `_source_file` and `ingested_at` are added to track data lineage.
 - **Notebooks**: `1_dim_bronze.ipynb`, `1_fact_bronze.ipynb`
 
-### 🥈 Silver Layer (Cleaned & Conformed Data)
+### Silver Layer (Cleaned & Conformed Data)
 In the Silver layer, data from the Bronze tables is cast to the appropriate types, cleaned, and standardized.
 - Nulls are handled and data validation is applied.
 - The tables serve as an "Enterprise View" of all key entities.
