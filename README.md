@@ -38,7 +38,7 @@ The Gold layer contains highly refined and aggregated data modeled specifically 
 - Output tables are written to the `ecommerce.gold` schema (e.g., `gld_fact_order_items`).
 - **Notebooks**: `1_dim_gold.ipynb`, `3_fact_gold.ipynb`
 
-### 🤖 Machine Learning (Purchase Propensity)
+### Machine Learning (Purchase Propensity)
 A new ML layer has been introduced to predict customer behavior using data from the Gold tables.
 - **Model Intent**: Predicts whether a customer will make a purchase in the next 30 days (`label_buy_next_30d`).
 - **Algorithm**: Logistic Regression built using Scikit-Learn.
@@ -49,7 +49,6 @@ A new ML layer has been introduced to predict customer behavior using data from 
 The registered model is deployed as a real-time REST API via Databricks Model Serving.
 
 ![Model Serving Endpoint](assets/serving_endpoint.png)
-*(Save your serving endpoint screenshot as `assets/serving_endpoint.png` to display here)*
 
 ---
 
